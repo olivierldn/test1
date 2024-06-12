@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+<body>
+  <nav class="bg-fuchsia-100 p-8">
+    <div class="container mx-auto flex justify-between items-center ">
+      <a href="#" class="text-black text-3xl font-bold"><span class="text-rose-600">Skadi</span>Digital</a>
+      <div class="hidden md:flex space-x-4">
+        <a href="#" class="text-gray-700 hover:text-gray-400">Home</a>
+        <a href="#" class="text-gray-700 hover:text-gray-400">About</a>
+        <a href="#" class="text-gray-700 hover:text-gray-400">Services</a>
+        <a href="#" class="text-gray-700 hover:text-gray-400">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button id="menu-button" class="text-rose-600 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="menu" class="hidden md:hidden p-0">
+      <a href="#" class="block text-gray-700 hover:text-gray-400 p-2">Home</a>
+      <a href="#" class="block text-gray-700 hover:text-gray-400 p-2">About</a>
+      <a href="#" class="block text-gray-700 hover:text-gray-400 p-2">Services</a>
+      <a href="#" class="block text-gray-700 hover:text-gray-400 p-2">Contact</a>
+    </div>
+  </nav>
+
+  <!-- <div class="grid sm:grid-cols-2 max-h-full">
+    <div class="bg-zinc-400 "><img src="pic/pexels-fauxels-3183170.jpg" alt="" class="w-52"></div>
+    <div class="bg-orange-500 ">dcdc</div>
+  </div> -->
+
+  <div class="flex flex-col-reverse lg:flex-row h-full lg:h-4/5 bg-gray-100">
+    <!-- Left Section: Photo -->
+    <div class="lg:w-1/2 flex items-center justify-center">
+        <img src="pic/pexels-fauxels-3183170.jpg" alt="Hero Image" class="w-full h-full object-cover rounded-2xl">
+    </div>
+    <!-- Right Section: Call to Action -->
+    <div class="lg:w-1/2 flex items-center justify-center bg-gray-100 p-8">
+        <div class="text-center lg:text-left">
+            <h1 class="text-4xl font-bold mb-4">Boost Your Social Media Presence</h1>
+            <p class="text-lg mb-6">Our expert team will help you grow your brand, engage with your audience, and drive more sales through powerful social media strategies.</p>
+            <button class="px-6 py-3 bg-rose-600 text-white font-semibold rounded-lg shadow-md hover:bg-rose-800 transition duration-300">
+                Get Started Today
+            </button>
+        </div>
+    </div>
+</div>
+<div class="flex flex-col-reverse lg:flex-row-reverse h-full lg:h-4/5 bg-gray-100">
+  <!-- Left Section: Photo -->
+  <div class="lg:w-1/2 flex items-center justify-center">
+      <img src="pic/pexels-fauxels-3183170.jpg" alt="Hero Image" class="w-full h-full object-cover rounded-2xl">
+  </div>
+  <!-- Right Section: Call to Action -->
+  <div class="lg:w-1/2 flex items-center justify-center bg-gray-100 p-8">
+      <div class="text-center lg:text-left">
+          <h1 class="text-4xl font-bold mb-4">Boost Your Social Media Presence</h1>
+          <p class="text-lg mb-6">Our expert team will help you grow your brand, engage with your audience, and drive more sales through powerful social media strategies.</p>
+          <button class="px-6 py-3 bg-rose-600 text-white font-semibold rounded-lg shadow-md hover:bg-rose-800 transition duration-300">
+              Get Started Today
+          </button>
+      </div>
+  </div>
+</div>
+  <script>
+    document.getElementById('menu-button').addEventListener('click', function () {
+      var menu = document.getElementById('menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
