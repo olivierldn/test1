@@ -6,11 +6,19 @@
         <title>Document</title>
         <link rel="stylesheet" href="output.css">
       </head>
-      <body>
-        <nav class="bg-fuchsia-100 p-8">
+      <body class="bg-fuchsia-800">
+        
+  <script>
+      function toggleAccordion(index) {
+          document.getElementById(`accordion-content-${index}`).classList.toggle("hidden");
+          document.getElementById(`arrow-icon-${index}`).classList.toggle("rotate-180");
+      }
+  </script>
+        <div class="container mx-auto bg-black h-screen ">
+        <nav class="bg-fuchsia-100 py-4 px-8">
           <div class="container mx-auto flex justify-between items-center ">
             <a href="#" class="text-black text-3xl font-bold"><span class="text-rose-600">Skadi</span>Digital</a>
-            <div class="hidden md:flex space-x-4">
+            <div class="hidden md:flex space-x-6 font-medium">
               <a href="#" class="text-gray-700 hover:text-gray-400">Home</a>
               <a href="#" class="text-gray-700 hover:text-gray-400">About</a>
               <a href="#" class="text-gray-700 hover:text-gray-400">Services</a>
@@ -33,15 +41,15 @@
         </nav>
 
 
-        <div class="flex flex-col-reverse lg:flex-row h-full lg:h-4/5 bg-fuchsia-200 p-4">
+        <div class="flex flex-col-reverse md:flex-row-reverse  justify-center items-center  bg-fuchsia-200 p-4 z-30 lg:h-80v">
           <!-- Left Section: Photo -->
-          <div class="lg:w-1/2 flex items-center justify-center">
-              <img src="pic/pexels-fauxels-3183170.jpg" alt="Hero Image" class="w-full h-full object-cover rounded-2xl">
+          <div class="md:w-1/2 w-2/3 flex items-center justify-center -z-10- ">
+              <img src="pic/digital-marketing-plan-smm-business-online-analytical-interface-display-advertising-analyst-studying-statistical-data-brand-rating.png" alt="Hero Image" class="w-full h-full">
           </div>
           <!-- Right Section: Call to Action -->
-          <div class="lg:w-1/2 flex items-center justify-center bg-fuchsia-200 p-8">
-              <div class="text-center lg:text-left text-gray-700">
-                  <h1 class="text-4xl font-bold mb-4">Boost Your Social Media Presence</h1>
+          <div class="lg:w-1/2 flex items-center justify-center bg-fuchsia-200 bg-opacity-80 p-4 md:p-8 z-0">
+              <div class="text-center lg:text-left text-gray-700 max-w-md">
+                  <h1 class="sm:text-4xl text-2xl font-bold mb-4">Boost Your Social Media Presence</h1>
                   <p class="text-lg mb-6">Our expert team will help you grow your brand, engage with your audience, and drive more sales through powerful social media strategies.</p>
                   <button class="px-6 py-3 bg-rose-600 text-white font-semibold rounded-lg shadow-md hover:bg-rose-800 transition duration-300">
                       Get Started Today
@@ -49,24 +57,28 @@
               </div>
           </div>
       </div>
-      <div class="flex flex-col-reverse lg:flex-row-reverse h-full lg:h-4/5 bg-fuchsia-100 p-4">
-        
-        
+      
+        <div class="text-center bg-fuchsia-100  text-gray-700">
+          <h1 class="text-4xl font-bold mb-4 pt-8 ">Our Story</h1>
+          <div class="flex flex-col-reverse md:flex-row max-h-fit justify-center items-center bg-fuchsia-100 px-4 z-30">
         <!-- Left Section: Photo -->
-        <div class="lg:w-1/2 flex items-center justify-center">
-            <img src="pic/pexels-mikael-blomkvist-6476561.jpg" alt="Hero Image" class="w-full h-full object-cover rounded-2xl">
+        <div class="md:w-1/2 w-2/3 flex items-center justify-center -z-10-">
+            <img src="pic/startup-flat-icon.png" alt="Hero Image" class="w-full h-full lg:h-4/5 lg:w-4/5  ">
         </div>
         <!-- Right Section: Call to Action -->
-        <div class="lg:w-1/2 flex items-center justify-center bg-fuchsia-100 p-8">
-            <div class="text-center lg:text-left text-gray-700">
-                <h1 class="text-4xl font-bold mb-4">We Are The Stuff From Nightmares</h1>
-                <p class="text-lg mb-6">Started in 1991 and we're carrying our legacy through the hardship of life untill day present. Join us on the journey into the bliss!</p>
-      <!--           <button class="px-6 py-3 bg-rose-600 text-white font-semibold rounded-lg shadow-md hover:bg-rose-800 transition duration-300">
-                    Get Started Today
-                </button> -->
+        <div class="lg:w-3/5 flex items-center justify-center bg-fuchsia-100 bg-opacity-80 p-4 md:p-4 z-0">
+            <div class="text-center lg:text-left text-gray-700 ">
+                
+                <p class="text-base mb-6 max-w-lg lg:text-left">Founded in 2017 in Istanbul, SKADI embarked on its digital marketing journey, focusing on long-tail PPC (Pay-Per-Click) campaigns for prominent Turkish enterprises. In May 2021, the company strategically relocated to London, rebranding as SKADI DIGITAL. This move allowed us to broaden our expertise to include SEO, content creation, conversion rate optimization (CRO), social media management, web design, and app development, thereby catering to a global clientele.
+
+                  Today, SKADI partners with renowned clients worldwide, upholding our unwavering commitment to digital excellence. Our mission is to deliver cutting-edge digital solutions, innovative web designs, and advanced app development services across diverse sectors. For us, achieving targets is just the beginning; our true aim is to consistently surpass expectations.
+                  </p>
+     
             </div>
         </div>
       </div>
+      </div>
+      
 
 
 
@@ -75,32 +87,7 @@
       <div class="text-center bg-fuchsia-200 p-4 text-gray-700">
         <h1 class="text-4xl font-bold mb-4 ">Our Services</h1>
     
-      <!-- <div class="flex flex-col lg:flex-row h-full lg:h-96 bg-fuchsia-200 gap-x-4 gap-y-4 m-0 justify-evenly p-4 text-center" >
-        
       
-        <div class="lg:w-1/3 lg:max-w-96 flex items-center justify-center bg-fuchsia-100 p-8 border-black border-2 rounded-2xl">
-          <div class="text-center lg:text-left text-gray-700">
-              <h2 class="text-3xl font-bold mb-4">We Are The Stuff From Nightmares</h1>
-              <p class="text-lg mb-6">Started in 1991 and we're carrying our legacy through the hardship of life untill day present. Join us on the journey into the bliss!</p>
-
-          </div>
-      </div>
-       
-        <div class="lg:w-1/3 lg:max-w-96 flex items-center justify-center bg-fuchsia-100 p-8 border-black border-2 rounded-2xl">
-            <div class="text-center lg:text-left text-gray-700">
-                <h2 class="text-3xl font-bold mb-4">We Are The Stuff From Nightmares</h1>
-                <p class="text-lg mb-6">Started in 1991 and we're carrying our legacy through the hardship of life untill day present. Join us on the journey into the bliss!</p>
-      
-            </div>
-        </div>
-        <div class="lg:w-1/3 lg:max-w-96 flex items-center justify-center bg-fuchsia-100 p-8 border-black border-2 rounded-2xl">
-          <div class="text-center lg:text-left text-gray-700">
-              <h2 class="text-3xl font-bold mb-4">We Are The Stuff From Nightmares</h1>
-              <p class="text-lg mb-6">Started in 1991 and we're carrying our legacy through the hardship of life untill day present. Join us on the journey into the bliss!</p>
-
-          </div>
-      </div>
-      </div> -->
       <div class="grid-cols-1 sm:grid md:grid-cols-3 ">
         <div
           class="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
@@ -117,6 +104,45 @@
               lead-in to additional content. This content is a little bit
               longer.
             </p>
+            <div class="max-w-md mx-auto mt-24">
+              <!-- Accordion Item 1 -->
+              <div class="overflow-hidden shadow-md bg-white">
+                  <div class="bg-gray-100 p-4 cursor-pointer flex justify-between items-center" onclick="toggleAccordion(1)">
+                      <h3 class="font-semibold text-lg">Accordion Item 1</h3>
+                      <span class="transform transition-transform" id="arrow-icon-1">▼</span>
+                  </div>
+                  <div class="p-4 hidden" id="accordion-content-1">
+                      <!-- Content for Accordion Item 1 -->
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+              </div>
+      
+              <!-- Accordion Item 2 -->
+              <div class="overflow-hidden shadow-md bg-white">
+                  <div class="bg-gray-100 p-4 cursor-pointer flex justify-between items-center" onclick="toggleAccordion(2)">
+                      <h3 class="font-semibold text-lg">Accordion Item 2</h3>
+                      <span class="transform transition-transform" id="arrow-icon-2">▼</span>
+                  </div>
+                  <div class="p-4 hidden" id="accordion-content-2">
+                      <!-- Content for Accordion Item 2 -->
+                      <p>Nulla facilisi. Suspendisse potenti. Vestibulum nec velit nec urna tincidunt vehicula.</p>
+                  </div>
+              </div>
+      
+              <!-- Accordion Item 3 -->
+              <div class="overflow-hidden shadow-md bg-white">
+                  <div class="bg-gray-100 p-4 cursor-pointer flex justify-between items-center" onclick="toggleAccordion(3)">
+                      <h3 class="font-semibold text-lg">Accordion Item 3</h3>
+                      <span class="transform transition-transform" id="arrow-icon-3">▼</span>
+                  </div>
+                  <div class="p-4 hidden" id="accordion-content-3">
+                      <!-- Content for Accordion Item 3 -->
+                      <p>Vestibulum ullamcorper, justo nec tincidunt feugiat, tortor justo eleifend nulla.</p>
+                  </div>
+              </div>
+      </div>
+      
           </div>
           <div
             class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center text-surface/75 dark:border-white/10 dark:text-neutral-300">
@@ -167,6 +193,33 @@
           </div>
         </div>
       </div>
+      <section class=" text-gray-700 py-8">
+        <h2 class="text-center text-2xl mb-2 font-bold leading-8">Our Clients</h2>
+        <p class="text-center text-lg font-extralight leading-8 ">We are trusted by the world’s most innovative teams</h2>
+        
+        <div class="logos group relative overflow-hidden whitespace-nowrap py-10 [mask-image:_linear-gradient(to_right,_transparent_0,_white_128px,white_calc(100%-128px),_transparent_100%)]">
+          <div class="animate-slide-left-infinite group-hover:animation-pause inline-block w-max">
+            <!-- Ensure that the images cover entire screen width for a smooth transition -->
+            <img class="mx-4 inline h-16" src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg" alt="Transistor" />
+            <img class="mx-4 inline h-16" src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg" alt="Reform" />
+            <img class="mx-4 inline h-16" src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg" alt="Tuple" />
+            <img class="mx-4 inline h-16" src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg" alt="SavvyCal" />
+            <img class="mx-4 inline h-16" src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg" alt="SavvyCal" />
+            <img class="mx-4 inline h-16" src="https://tailwindui.com/img/logos/158x48/laravel-logo-white.svg" alt="SavvyCal" />
+          </div>
+      
+          <!-- Duplicate of the above for infinite effect (you can use javascript to duplicate this too) -->
+          <div class="animate-slide-left-infinite group-hover:animation-pause inline-block w-max">
+            <!-- Ensure that the images cover entire screen width for a smooth transition -->
+            <img class="mx-4 inline h-16" src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg" alt="Transistor" />
+            <img class="mx-4 inline h-16" src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg" alt="Reform" />
+            <img class="mx-4 inline h-16" src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg" alt="Tuple" />
+            <img class="mx-4 inline h-16" src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg" alt="SavvyCal" />
+            <img class="mx-4 inline h-16" src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg" alt="SavvyCal" />
+            <img class="mx-4 inline h-16" src="https://tailwindui.com/img/logos/158x48/laravel-logo-white.svg" alt="SavvyCal" />
+          </div>
+        </div>
+      </section>
    <!-- component -->
 <div class="flex items-center justify-center p-12">
   <!-- Author: FormBold Team -->
@@ -262,7 +315,8 @@
         </div>
       </div> -->
 
-
+    </div>
+    
         <script>
           document.getElementById('menu-button').addEventListener('click', function () {
             var menu = document.getElementById('menu');
